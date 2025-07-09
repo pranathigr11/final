@@ -40,25 +40,22 @@ class RecipeView extends View {
       <div class="recipe__details">
         <div class="recipe__info">
          
-           <img class="recipe__info-icon" src="${images.clock}">
-         
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
         </div>
 
         <div class="recipe__info">
          
-            <img class="recipe__info-icon" src="${images.users}">
-          
+           
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-               <img  src="${images.minusCircle}">
+             
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-              <img  src="${images.plusCircle}">
+              
             </button>
           </div>
         </div>
@@ -74,11 +71,11 @@ class RecipeView extends View {
 
         <!-- User Generated Icon -->
         <div class="recipe__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-          <img src="${images.userGenerated}">
+         
         </div>
 
         <button class="btn--round btn--bookmark">
-        <img src="${images.bookmark}">
+       
         </button>
       </div>
 

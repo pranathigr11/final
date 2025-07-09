@@ -61,7 +61,7 @@ export default class View {
   renderSpinner() {
     const markup = `
       <div class="spinner">
-        <img src="${images.loader}">
+        
       </div>
     `;
     this._clear();

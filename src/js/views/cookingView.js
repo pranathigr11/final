@@ -71,7 +71,7 @@ class CookingView extends View {
                   </div>
                   <button class="btn--small">
                       <span>Add Timer</span>
-                     <img src="../../../img/clock.png">
+                     
                   </button>
               </form>
             </div>
