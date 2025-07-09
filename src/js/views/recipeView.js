@@ -55,10 +55,10 @@ class RecipeView extends View {
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-               <img  src="src/img/minus-circle.png">
+               -
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-               <img  src="src/img/plus-circle.png">
+               +
             </button>
           </div>
         </div>
