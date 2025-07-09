@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <!-- PATH FIXED -->
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon" />
+
+    <!-- PATH FIXED -->
+    <link rel="stylesheet" href="./src/sass/main.scss" /> 
+    <!-- PATH FIXED -->
+    <link rel="stylesheet" href="./src/sass/cooking-mode.scss" />
+
+
+    <!-- PATH FIXED -->
+    <script defer type="module" src="./src/js/cookingController.js"></script>
+
+    <title>forkify // Cooking Mode</title>
+  </head>
+
+  <body>
+    <!-- Main container for the cooking dashboard -->
+    <div class="cooking-container">
+      <!-- Content will be rendered here by cookingView.js -->
+    </div>
+
+    <!-- Container for the floating timer widget -->
+    <div class="timer-manager-container"></div>
+
+    <!-- Container for the AI Modal (initially hidden) -->
+    <div class="ai-overlay hidden"></div>
+    <div class="ai-modal hidden">
+        <!-- AI Modal content will be rendered here by aiView.js -->
+    </div>
+  </body>
+</html>
