@@ -48,7 +48,7 @@ class RecipeView extends View {
 
         <div class="recipe__info">
          
-            <img class="recipe__info-icon" src="../../../img/users.png">
+            <img class="recipe__info-icon" src="../../img/users.png">
           
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
