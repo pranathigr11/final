@@ -3,7 +3,7 @@
 import View from './View.js';
 import icons from 'url:../../img/icons.svg';
 import { formatIngredientQuantity } from '../helpers.js';
-import { images, sounds } from '../assets.js';
+import { images } from '../assets.js';
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMessage = 'We could not find that recipe. Please try another one!';

@@ -16,7 +16,7 @@ import smileIcon from '../img/smile.png';
 import uploadCloudIcon from '../img/upload-cloud.png';
 
 // Audio import
-import timerDoneSound from '../img/timer-done.mp3';
+
 
 // Grouped exports
 export const images = {
@@ -37,6 +37,3 @@ export const images = {
   uploadCloud: uploadCloudIcon,
 };
 
-export const sounds = {
-  timerDone: timerDoneSound,
-};
