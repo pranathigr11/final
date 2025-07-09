@@ -1,4 +1,5 @@
 @use 'base' as *;
+@use '_components' as *;
 .header {
   grid-area: head;
   background-color: $color-grey-light-1;
