@@ -1,5 +1,5 @@
 import icons from 'url:../../img/icons.svg'; // Parcel 2
-
+import {images} from '../assets.js';
 export default class View {
   _data;
 
@@ -61,7 +61,7 @@ export default class View {
   renderSpinner() {
     const markup = `
       <div class="spinner">
-        <img src="../../../img/loader.png">
+        <img src="${images.loader}">
       </div>
     `;
     this._clear();

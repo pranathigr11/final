@@ -2,7 +2,7 @@
 
 import View from './View.js';
 import icons from 'url:../../img/icons.svg';
-
+import {images} from '../assets.js';
 class PreviewView extends View {
   _parentElement = '';
 
@@ -19,7 +19,7 @@ class PreviewView extends View {
             <h4 class="preview__title">${this._data.title}</h4>
             <p class="preview__publisher">${this._data.publisher}</p>
             <div class="preview__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-              <img src="../../../img/users.png">
+              <img src="${images.userGenerated}">
             </div>
           </div>
         </a>
