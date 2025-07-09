@@ -46,8 +46,7 @@ class CookingView extends View {
   _generateMarkup() {
     return `
       <a href="index.html#${this._data.id}" class="btn--inline btn--back">
-        <svg><use href="${icons}#icon-arrow-left"></use></svg>
-        <span>Back to Recipe</span>
+         <span>Back to Recipe</span>
       </a>
       <h1 class="cooking-title"><span>${this._data.title}</span></h1>
       

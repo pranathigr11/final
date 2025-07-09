@@ -3,7 +3,7 @@
 import View from './View.js';
 import icons from 'url:../../img/icons.svg';
 import { formatIngredientQuantity } from '../helpers.js';
-
+import { images, sounds } from '../assets.js';
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMessage = 'We could not find that recipe. Please try another one!';
@@ -40,7 +40,7 @@ class RecipeView extends View {
       <div class="recipe__details">
         <div class="recipe__info">
          
-           <img class="recipe__info-icon" src="../../../img/clock.png">
+           <img class="recipe__info-icon" src="${images.clock}">
          
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
@@ -48,17 +48,17 @@ class RecipeView extends View {
 
         <div class="recipe__info">
          
-            <img class="recipe__info-icon" src="../../img/users.png">
+            <img class="recipe__info-icon" src="${images.users}">
           
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-               <img  src="../../../img/minus.circle.png">
+               <img  src="${images.minusCircle}">
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-              <img  src="../../../img/plus.circle.png">
+              <img  src="${images.plusCircle}">
             </button>
           </div>
         </div>
@@ -74,11 +74,11 @@ class RecipeView extends View {
 
         <!-- User Generated Icon -->
         <div class="recipe__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-          <img src="../../../img/users">
+          <img src="${images.userGenerated}">
         </div>
 
         <button class="btn--round btn--bookmark">
-        <img src="../../../img/bookmark-fill.png">
+        <img src="${images.bookmark}">
         </button>
       </div>
 
