@@ -39,26 +39,26 @@ class RecipeView extends View {
 
       <div class="recipe__details">
         <div class="recipe__info">
-          <svg class="recipe__info-icon">
-            <use href="${icons}#icon-clock"></use>
-          </svg>
+         
+           <img class="recipe__info-icon" src="src/img/clock.png">
+         
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
         </div>
 
         <div class="recipe__info">
-          <svg class="recipe__info-icon">
-            <use href="${icons}#icon-users"></use>
-          </svg>
+         
+            <img class="recipe__info-icon" src="src/img/users.png">
+          
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-              <svg><use href="${icons}#icon-minus-circle"></use></svg>
+               <img  src="src/img/minus-circle.png">
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-              <svg><use href="${icons}#icon-plus-circle"></use></svg>
+               <img  src="src/img/plus-circle.png">
             </button>
           </div>
         </div>
@@ -66,9 +66,7 @@ class RecipeView extends View {
         <!-- Nutrition Info Display -->
         <div class="recipe__info nutrition__info">
           ${this._data.nutrition && this._data.nutrition.calories > 0 ? `
-            <svg class="recipe__info-icon">
-              <use href="${icons}#icon-fire"></use>
-            </svg>
+            
             <span class="recipe__info-data">${Math.round(this._data.nutrition.calories)}</span>
             <span class="recipe__info-text">kcal / serving</span>
           ` : ''}
@@ -76,12 +74,10 @@ class RecipeView extends View {
 
         <!-- User Generated Icon -->
         <div class="recipe__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-          <svg><use href="${icons}#icon-user"></use></svg>
+          <img src="src/img/users">
         </div>
 
-        <button class="btn--round btn--bookmark">
-          <svg><use href="${icons}#icon-bookmark${this._data.bookmarked ? '-fill' : ''}"></use></svg>
-        </button>
+        <button class="btn--round btn--bookmark"> </button>
       </div>
 
       <div class="recipe__ingredients">
