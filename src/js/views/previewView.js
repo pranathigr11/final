@@ -19,9 +19,7 @@ class PreviewView extends View {
             <h4 class="preview__title">${this._data.title}</h4>
             <p class="preview__publisher">${this._data.publisher}</p>
             <div class="preview__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-              <svg>
-                <use href="${icons}#icon-user"></use>
-              </svg>
+              <img src="../../../img/users.png">
             </div>
           </div>
         </a>

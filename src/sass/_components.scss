@@ -30,7 +30,7 @@
   font-size: 1.5rem;
   font-weight: 600;
 
-  svg {
+  img {
     height: 2.25rem;
     width: 2.25rem;
     fill: currentColor;
@@ -53,7 +53,7 @@
     padding: 1.25rem 2.25rem;
     text-decoration: none;
 
-    svg {
+    img {
       height: 1.75rem;
       width: 1.75rem;
       fill: currentColor;
@@ -75,7 +75,7 @@
   align-items: center;
   transition: all 0.2s;
 
-  svg {
+  img {
     height: 1.6rem;
     width: 1.6rem;
     fill: currentColor;
@@ -118,7 +118,7 @@
     outline: none;
   }
 
-  svg {
+  img {
     height: 2.5rem;
     width: 2.5rem;
     fill: #fff;
@@ -132,7 +132,7 @@
   background: none;
   cursor: pointer;
 
-  svg {
+ img {
     height: 100%;
     width: 100%;
     fill: $color-primary;
@@ -177,7 +177,7 @@
   margin: 5rem auto;
   text-align: center;
 
-  svg {
+ img {
     height: 6rem;
     width: 6rem;
     fill: $color-primary;
@@ -203,7 +203,7 @@
 
   display: flex;
 
-  svg {
+ img {
     height: 3rem;
     width: 3rem;
     fill: $color-primary;

@@ -72,7 +72,7 @@ class CookingView extends View {
                   </div>
                   <button class="btn--small">
                       <span>Add Timer</span>
-                      <svg><use href="${icons}#icon-clock"></use></svg>
+                     <img src="../../../img/clock.png">
                   </button>
               </form>
             </div>
@@ -80,9 +80,8 @@ class CookingView extends View {
               <h3 class="tool__title">AI Assistant</h3>
               <p class="tool__description">Need a substitute for an ingredient or a wine pairing suggestion? Ask our chef's assistant!</p>
               <button class="btn--small btn--ask-ai">
-                <span>Ask AI</span>
-                <svg><use href="${icons}#icon-help-with-circle"></use></svg>
-              </button>
+                <span>Ask AI Specialist</span>
+                  </button>
             </div>
         </div>
 
@@ -95,8 +94,7 @@ class CookingView extends View {
               <p class="tool__description">This recipe was designed by <strong>${this._data.publisher}</strong>. View their original instructions for detailed steps.</p>
               <a class="btn--small" href="${this._data.sourceUrl}" target="_blank">
                 <span>View Source</span>
-                <svg><use href="${icons}#icon-arrow-right"></use></svg>
-              </a>
+                </a>
             </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ class RecipeView extends View {
       <div class="recipe__details">
         <div class="recipe__info">
          
-           <img class="recipe__info-icon" src="src/img/clock.png">
+           <img class="recipe__info-icon" src="../../../img/clock.png">
          
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
@@ -48,17 +48,17 @@ class RecipeView extends View {
 
         <div class="recipe__info">
          
-            <img class="recipe__info-icon" src="src/img/users.png">
+            <img class="recipe__info-icon" src="../../../img/users.png">
           
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-               -
+               <img  src="../../../img/minus.circle.png">
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-               +
+              <img  src="../../../img/plus.circle.png">
             </button>
           </div>
         </div>
@@ -74,10 +74,12 @@ class RecipeView extends View {
 
         <!-- User Generated Icon -->
         <div class="recipe__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-          <img src="src/img/users">
+          <img src="../../../img/users">
         </div>
 
-        <button class="btn--round btn--bookmark"> </button>
+        <button class="btn--round btn--bookmark">
+        <img src="../../../img/bookmark-fill.png">
+        </button>
       </div>
 
       <div class="recipe__ingredients">
@@ -96,11 +98,10 @@ class RecipeView extends View {
         <div class="recipe__directions-buttons">
           <a class="btn--small recipe__btn" href="${this._data.sourceUrl}" target="_blank">
             <span>Directions</span>
-            <svg class="search__icon"><use href="${icons}#icon-arrow-right"></use></svg>
-          </a>
+            </a>
           <a class="btn--small recipe__btn" href="cook-mode.html?id=${this._data.id}" target="_blank">
             <span>Cooking Mode</span>
-            <svg><use href="${icons}#icon-list"></use></svg>
+            
           </a>
         </div>
       </div>

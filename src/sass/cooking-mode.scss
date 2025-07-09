@@ -250,15 +250,11 @@
   min-height: 8rem;
 
   .spinner--tiny {
-    margin: 1rem auto;
-    display: block; 
-  }
-}
-
-// Re-using your tiny spinner class
-.spinner--tiny {
   height: 2.5rem;
   width: 2.5rem;
   fill: $color-primary;
   animation: rotate 1.5s infinite linear;
 }
+}
+
+// Re-using your tiny spinner class
