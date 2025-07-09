@@ -21,11 +21,7 @@
   align-items: center;
   padding-left: 3rem;
   transition: all 0.3s;
-   width: 24px;       /* Set desired width */
-  height: 24px;      /* Set desired height */
-  cursor: pointer;   /* Makes it look clickable */
-  margin: 5px;       /* Optional spacing */
-  filter: grayscale(100%); /* Optional visual effect */
+   
   &:focus-within {
     transform: translateY(-2px);
     box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
