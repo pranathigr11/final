@@ -1,7 +1,7 @@
 // COMPLETE AND MODIFIED CODE FOR: src/js/views/timerView.js
 
 import View from './View.js';
-import icons from 'url:../../img/icons.svg';
+
 // NEW: 1. Import the sound file. Make sure the path and name are correct.
 import timerSound from 'url:../../img/timer-done.mp3';
 

@@ -3,7 +3,7 @@
 // CORRECTED and COMPLETE aiView.js
 
 import View from './View.js';
-import icons from 'url:../../img/icons.svg';
+
 
 class AiView extends View {
   _parentElement = document.querySelector('.ai-modal');

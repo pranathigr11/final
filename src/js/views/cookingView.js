@@ -1,7 +1,7 @@
 // FINAL AND CORRECTED CODE for: src/js/views/cookingView.js
 
 import View from './View.js';
-import icons from 'url:../../img/icons.svg';
+
 import { formatIngredientQuantity } from '../helpers.js'; 
 
 class CookingView extends View {

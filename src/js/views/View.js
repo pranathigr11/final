@@ -1,4 +1,4 @@
-import icons from 'url:../../img/icons.svg'; // Parcel 2
+ // Parcel 2
 import {images} from '../assets.js';
 export default class View {
   _data;

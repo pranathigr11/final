@@ -1,7 +1,7 @@
 // FINAL AND CORRECTED CODE for: src/js/views/previewView.js
 
 import View from './View.js';
-import icons from 'url:../../img/icons.svg';
+
 import {images} from '../assets.js';
 class PreviewView extends View {
   _parentElement = '';

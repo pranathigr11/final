@@ -1,7 +1,7 @@
 // FINAL AND CORRECTED CODE for: src/js/views/recipeView.js
 
 import View from './View.js';
-import icons from 'url:../../img/icons.svg';
+
 import { formatIngredientQuantity } from '../helpers.js';
 import { images } from '../assets.js';
 class RecipeView extends View {
@@ -39,7 +39,7 @@ class RecipeView extends View {
 
       <div class="recipe__details">
         <div class="recipe__info">
-         <img src="src/img/clock.png" alt="Clock" class="recipe__info-icon" />
+         <img src="../src/img/clock.png" alt="Clock" class="recipe__info-icon" />
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
         </div>
