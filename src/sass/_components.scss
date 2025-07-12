@@ -9,14 +9,8 @@
   display: flex;
   align-items: center;
   transition: all 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  &:focus {
-    outline: none;
-  }
+ &:hover { transform: scale(1.05); }
+  &:focus { outline: none; }
 
   & > *:first-child {
     margin-right: 1rem;
@@ -56,7 +50,7 @@
     img {
       height: 1.75rem;
       width: 1.75rem;
-      fill: currentColor;
+      
     }
   }
 }
@@ -78,7 +72,7 @@
   img {
     height: 1.6rem;
     width: 1.6rem;
-    fill: currentColor;
+    
     margin: 0 0.2rem;
   }
 
@@ -121,7 +115,7 @@
   img {
     height: 2.5rem;
     width: 2.5rem;
-    fill: #fff;
+ 
   }
 }
 
@@ -144,12 +138,12 @@
   }
 
   &:hover svg {
-    fill: $color-grad-2;
+    
     transform: translateY(-1px);
   }
 
   &:active svg {
-    fill: $color-grad-2;
+    
     transform: translateY(0);
   }
 
@@ -177,12 +171,12 @@
   margin: 5rem auto;
   text-align: center;
 
- img {
-    height: 6rem;
-    width: 6rem;
-    fill: $color-primary;
+   img {
+    height: 6.5rem;
+    width: 6.5rem;
     animation: rotate 2s infinite linear;
   }
+
 }
 
 @keyframes rotate {
@@ -206,7 +200,7 @@
  img {
     height: 3rem;
     width: 3rem;
-    fill: $color-primary;
+    
     transform: translateY(-0.3rem);
   }
 

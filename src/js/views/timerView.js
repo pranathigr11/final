@@ -62,7 +62,7 @@ class TimerView extends View {
         <span class="timer-item__label">${timer.label}</span>
         <strong class="timer-item__time">${remaining <= 0 ? 'Done!' : formatTime(remaining)}</strong>
         <button class="btn--tiny timer__btn--remove" data-id="${timer.id}">
-         <img src="../../../img/minus-circle.png">
+         <img src="src/img/minus-circle.png" alt="Remove Timer" />
         </button>
       </li>
     `;

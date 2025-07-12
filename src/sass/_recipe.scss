@@ -48,6 +48,7 @@
     line-height: 1.95;
     text-align: center;
 
+
     span {
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
@@ -70,6 +71,7 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+     gap: 2rem 4rem;
   }
 
   &__info {
@@ -83,10 +85,10 @@
     }
   }
 
-  &__info-icon {
+ 
+  &__info-icon { // This now styles the <img> tag
     height: 2.35rem;
     width: 2.35rem;
-    fill: $color-primary;
     margin-right: 1.15rem;
   }
 
@@ -94,7 +96,10 @@
     margin-right: 0.5rem;
     font-weight: 700;
   }
-
+ &__info-buttons {
+    display: flex;
+    margin-left: 1.6rem;
+    transform: translateY(-1px);
   &__info-buttons {
     display: flex;
     margin-left: 1.6rem;
@@ -117,7 +122,6 @@
     img {
       height: 2.25rem;
       width: 2.25rem;
-      fill: $color-primary;
     }
   }
 
@@ -147,7 +151,7 @@
   &__icon {
     height: 2rem;
     width: 2rem;
-    fill: $color-primary;
+    
     margin-right: 1.1rem;
     flex: 0 0 auto;
     margin-top: 0.1rem;
@@ -178,11 +182,14 @@
   &__publisher {
     font-weight: 700;
   }
+   &__directions-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    .search__icon { // Target the icon in the button
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+  }
 }
-// In src/sass/_recipe.scss
-
-.recipe__directions-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
 }

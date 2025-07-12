@@ -61,7 +61,7 @@ export default class View {
   renderSpinner() {
     const markup = `
       <div class="spinner">
-        
+        <img src="src/img/loader.png" alt="Loading..." />
       </div>
     `;
     this._clear();
@@ -72,7 +72,7 @@ export default class View {
     const markup = `
       <div class="error">
         <div>
-         <img src="../../../img/smile.png">
+         <img src="src/img/smile.png" alt="Error" />
         </div>
         <p>${message}</p>
       </div>
@@ -85,7 +85,7 @@ export default class View {
     const markup = `
       <div class="message">
         <div>
-         <img src="../../../img/smile.png">
+         <img src="src/img/smile.png" alt="Message" />
         </div>
         <p>${message}</p>
       </div>

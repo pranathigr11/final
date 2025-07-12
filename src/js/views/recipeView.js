@@ -39,23 +39,23 @@ class RecipeView extends View {
 
       <div class="recipe__details">
         <div class="recipe__info">
-         
+         <img src="src/img/clock.png" alt="Clock" class="recipe__info-icon" />
           <span class="recipe__info-data recipe__info-data--minutes">${this._data.cookingTime}</span>
           <span class="recipe__info-text">minutes</span>
         </div>
-
+          
         <div class="recipe__info">
          
-           
+           <img src="src/img/users.png" alt="Servings" class="recipe__info-icon" />
           <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
-             
+             <img src="src/img/minus-circle.png" alt="Decrease servings" />
             </button>
             <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
-              
+              <img src="src/img/plus-circle.png" alt="Increase servings" />
             </button>
           </div>
         </div>
@@ -71,11 +71,11 @@ class RecipeView extends View {
 
         <!-- User Generated Icon -->
         <div class="recipe__user-generated ${this._data.userGenerated ? '' : 'hidden'}">
-         
+          <img src="src/img/users.png" alt="User Generated" />
         </div>
 
         <button class="btn--round btn--bookmark">
-       
+       <img src="${this._data.bookmarked ? 'src/img/bookmark-fill.png' : 'src/img/bookmark.png'}" alt="Bookmark" />
         </button>
       </div>
 

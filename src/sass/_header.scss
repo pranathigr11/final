@@ -22,7 +22,7 @@
   padding-left: 3rem;
   transition: all 0.3s;
    
-  &:focus-within {
+   &:focus-within {
     transform: translateY(-2px);
     box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
   }
@@ -34,15 +34,8 @@
     color: inherit;
     font-size: 1.7rem;
     width: 30rem;
-
-    &:focus {
-      outline: none;
-    }
-
-    &::placeholder {
-      color: $color-grey-light-3;
-    }
-
+    &:focus { outline: none; }
+    &::placeholder { color: $color-grey-light-3; }
     @media only screen and (max-width: $bp-medium) {
       width: auto;
 
@@ -50,12 +43,16 @@
         color: white;
       }
     }
-  }
-
-  &__btn {
+     &__btn {
     font-weight: 600;
     font-family: inherit;
+    .search__icon { // Target the class on the img
+      height: 2.2rem;
+      width: 2.2rem;
+    }
   }
+  }
+
 }
 
 .nav {
@@ -95,14 +92,12 @@
       margin-right: 0.7rem;
       transform: translateY(-1px);
     }
-
-    &:focus {
-      outline: none;
+.nav__icon { // Target the class on the img
+      height: 2.4rem;
+      width: 2.4rem;
     }
-
-    &:hover {
-      background-color: $color-grey-light-2;
-    }
+    &:focus { outline: none; }
+    &:hover { background-color: $color-grey-light-2; }
   }
 }
 

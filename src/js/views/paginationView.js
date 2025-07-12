@@ -27,7 +27,7 @@ class PaginationView extends View {
           curPage + 1
         }" class="btn--inline pagination__btn--next">
           <span>Page ${curPage + 1}</span>
-         
+         <img src="src/img/arrow-right.png" alt="Clock">
         </button>
       `;
     }
@@ -38,7 +38,7 @@ class PaginationView extends View {
         <button data-goto="${
           curPage - 1
         }" class="btn--inline pagination__btn--prev">
-          
+          <img src="src/img/arrow-left.png" alt="Clock">
           <span>Page ${curPage - 1}</span>
         </button>
       `;
@@ -50,14 +50,14 @@ class PaginationView extends View {
         <button data-goto="${
           curPage - 1
         }" class="btn--inline pagination__btn--prev">
-         
+          <img src="src/img/arrow-left.png" alt="Clock">
           <span>Page ${curPage - 1}</span>
         </button>
         <button data-goto="${
           curPage + 1
         }" class="btn--inline pagination__btn--next">
           <span>Page ${curPage + 1}</span>
-         
+         <img src="src/img/arrow-right.png" alt="Clock">
         </button>
       `;
     }
