@@ -6,7 +6,7 @@ import checkIcon from '../img/check.png';
 import clockIcon from '../img/clock.png';
 import editIcon from '../img/edit.png';
 import favicon from '../img/favicon.png';
-import iconsSprite from '../img/icons.svg';
+
 import loaderIcon from '../img/loader.png';
 import logoIcon from '../img/logo.png';
 import minusCircleIcon from '../img/minus-circle.png';
